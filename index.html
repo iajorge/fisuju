@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Superficie</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<header>
+  <!-- <p><img id="logo" src="logo.png" alt="logo" /></p> -->
+  <p class="texto-adaptable">Calculadora de Superficie</p>
+</header>
+
+<body>
+
+  <div class="con_container">
+    <div class="container">
+      <label for="jugadores">Cantidad de Jugadores:</label>
+      <input type="number" id="jugadores" oninput="validarInputs()">
+    </div>
+    <div class="container">
+      <label for="superficie">Superficie por Jugador:</label>
+      <input type="number" id="superficie" oninput="validarInputs()">
+    </div>
+    <div class="container">
+      <label for="superficieTotal">Superficie Total:</label>
+      <input type="number" id="superficieTotal" oninput="validarInputs()">
+    </div>
+    <div class="container">
+      <button onclick="calcularSuperficie()" id="boton">Calcular</button>
+      <button onclick="resetear()">Reset</button>
+    </div>
+
+  </div>
+
+  <div class="con_container">
+    <div class="container" id="triangulo"></div>
+    <div class="container" id="cuadrado"></div>
+    <div class="container" id="pentagono"></div>
+    <div class="container" id="hexagono"></div>
+    <div class="containerR" id="rombo"></div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

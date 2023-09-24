@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  html {
+	font-size: 62.5%;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  header {
+    background-image: url('logo.png'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ubicación de tu imagen de fondo */
+    background-size: cover; Ajusta el tamaño de la imagen para cubrir toda la ventana
+    background-position: center; /* Centra la imagen en la ventana */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    color: red; /* Establece el color del texto en rojo */
+    /* font-size: 1.5rem; Tamaño del texto */
+    text-align: center; /* Alinea el texto en el centro */
+    padding: 100px; /* Espacio alrededor del texto para mayor legibilidad */
+    height: 40vh;
+    box-shadow: 1rem 1rem 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .texto-adaptable {
+    width: 95%; /* Establece el ancho del elemento al 75% del contenedor */
+            max-width: 100%; /* Limita el ancho máximo al 100% para que no se desborde */
+            font-size: 4em; /* Tamaño de fuente */
+            font-weight: bold; /* Establece el texto en negrita */
+            color: red; /* Color del texto blanco */
+            padding: 100px; /* Espaciado alrededor del texto para mayor legibilidad */
+            white-space: nowrap; /* Evita que el texto se desborde verticalmente */
+            overflow: hidden; /* Oculta cualquier contenido que se desborde horizontalmente */
+            text-overflow: ellipsis; /* Agrega puntos suspensivos (...) si el texto se desborda horizontalmente */
+         }
+
+  #logo {
+    width: 100%;
+    /* margin: 2rem; */
+    box-shadow: 1rem 1rem 5rem;
+    border-radius: 2rem;
+  }
+body {
+	background-color: #FFFFFF;
+	margin: 0;
+  font-size: 1.6rem;
+
+	padding: 20px;
+	height: 60vh;
+}
+
+.con_container {
+  width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container, .containerR {
+	width: 20%;
+	/* display: block; */
+	justify-content: center;
+	align-items: center;
+	/* margin: 20px; */
+}
+.containerR {
+  position: relative;
+}
+.svg-container, .svg-containerR {
+  width: 100%;
+	height: 100%;
+
+} 
+.svg-containerR {
+	position: absolute;
+  top: 0;
+  left: 0;
+}
+input, button {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+.text {
+	fill: #000000;
+	text-anchor: middle;
+	font-weight: bold;
+	font-size: 0.75rem;
+  position: absolute;
+  width: 100%;
+	height: 50%;
+  top: 50;
+  left: 0;
+}
+#variablelarombo {
+  left: 3;
+  top: 75;
+	font-size: 2.2rem;
+
+}
+#variableDvrombo {
+	font-size: 2rem;
+
+  left: 3;
+  top: 70;
+}
+#variabledhrombo {
+  left: 3;
+  top: 35;
+  font-size: 2rem;
+
+}
+#variableperimetrorombo {
+  left: 3;
+  top: 45;
+  font-size: 1.75rem;
+
+}
+
+#slider-container {
+  /* width: 100%;
+  margin: 0 auto; */
+  position: absolute;
+  width: 100%;
+	height: 10%;
+  bottom: 0;
+  left: 0;
+}
+
+#slider {
+  width: 100%;
+  justify-content: center;
+	align-items: center;
+
+}
+
+#valor-variable {
+  font-size: 1rem;
+  /* margin-top: 0px; */
+  text-align: center;
+  align-items: center;
+
+  position: absolute;
+  width: 100%;
+	height: 5%;
+  bottom: 0;
+  left: 0;
+}
+
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+}
+  
